@@ -1,3 +1,10 @@
+import os
+
+# Path consts
+PROJECT_ROOT = os.path.dirname(os.path.realpath(__file__))
+MEDIA_ROOT = os.path.join(PROJECT_ROOT, 'media')
+
+# Buttons consts
 YELLOW_INDEX = 11
 ORANGE_INDEX = 16
 RED_INDEX = 12
@@ -21,3 +28,4 @@ BUTTONS_NAMES[RED_INDEX] = 'red'
 BUTTONS_NAMES[BLUE_INDEX] = 'blue'
 BUTTONS_NAMES[GREEN_INDEX] = 'green'
 BUTTONS_NAMES[PEDAL_INDEX] = 'pedal'
+
