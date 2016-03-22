@@ -1,4 +1,5 @@
 import usb.core
+import usb.util
 __all__ = ['Device']
 
 
@@ -26,6 +27,13 @@ class Device(object):
                 idVendor=self.get_id_vendor(),
                 idProduct=self.get_id_product()
             )
+
+            if self._device.is_kernel_driver_active(self._interface):
+                # tell the kernel to detach
+                self._device.detach_kernel_driver(self._interface)
+                # claim the device
+                usb.util.claim_interface(self._device, self._interface)
+
         return self._device
 
     def get_endpoit(self):
