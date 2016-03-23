@@ -19,6 +19,7 @@ Plug the USB of GuitarHero® Drum and run the PyDrum script.
 Click bellow and see this in action.
 
 [Youtube Video](http://www.youtube.com/watch?v=Lw94ewgFMDo)
+
 [![PyDrum Example](http://img.youtube.com/vi/Lw94ewgFMDo/0.jpg)](http://www.youtube.com/watch?v=Lw94ewgFMDo)
 
 ## TODO
